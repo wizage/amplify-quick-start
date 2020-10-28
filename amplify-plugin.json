@@ -1,16 +1,10 @@
 {
-    "name": "my-amplify-plugin",
+    "name": "quick-start",
+    "aliases": ["qs"],
     "type": "category",
     "commands": [
         "version",
         "help",
-        "add",
-        "remove"
-    ],
-    "eventHandlers": [
-        "PreInit",
-        "PostInit",
-        "PrePush",
-        "PostPush"
+        "create"
     ]
 }

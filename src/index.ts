@@ -1,8 +1,14 @@
-const path = require('path');
+import path from 'path';
+import { category } from './constants';
 
-async function executeAmplifyCommand(context) {
-  const commandsDirPath = path.normalize(path.join(__dirname, 'commands'));
-  const commandPath = path.join(commandsDirPath, context.input.command);
+export async function executeAmplifyCommand(context) {
+  let commandPath = path.normalize(path.join(__dirname, 'commands'));
+  if (context.input.command === 'help') {
+    commandPath = path.join(commandPath, category);
+  } else {
+    commandPath = path.join(commandPath, category, context.input.command);
+  }
+
   const commandModule = require(commandPath);
   await commandModule.run(context);
 }

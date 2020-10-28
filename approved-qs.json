@@ -1,0 +1,14 @@
+{
+  "list":{
+    "UnicornFlix - Video on Demand": {
+      "info":"In this workshop we will build the video on demand streaming platform that allows you to upload, process, and serve videos to authenticated users.",
+      "url":"https://github.com/wizage/unicornflix_one_click.git",
+      "projectName":"unicornflix"
+    },
+    "Create-react-app with AWS Amplify Auth": {
+      "info":"This auth starter implements withAuthenticator HOC to provide a basic authentication flow for signing up signing in users as well as protected client side routing using AWS Amplify. Auth features: User sign up, User sign in, Multi-factor Authentication, User sign-out.",
+      "url":"https://github.com/aws-samples/create-react-app-auth-amplify.git",
+      "projectName":"authStarter"
+    }
+  }
+}
